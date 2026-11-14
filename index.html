@@ -62,16 +62,16 @@
     <section class="stats-band" aria-label="数字で見るMimica">
       <div class="wrap stats">
         <div class="stat">
-          <span class="num">524</span>
-          <span class="label">自動チェック<br><small>356 → 475 → 524 と機能ごとに追加</small></span>
+          <span class="num">559</span>
+          <span class="label">自動チェック<br><small>356 → 475 → 524 → 534 → 559 と機能ごとに追加</small></span>
         </div>
         <div class="stat">
-          <span class="num">27</span>
-          <span class="label">Issue<br><small>背景・範囲・やらないことを書いてから着手</small></span>
+          <span class="num">37</span>
+          <span class="label">Issue・PR<br><small>背景・範囲・やらないことを書いてから着手</small></span>
         </div>
         <div class="stat">
-          <span class="num">4000<small>×</small>8000</span>
-          <span class="label">px の立ち絵を原寸で<br><small>メモリ見積もりもREADMEに明記</small></span>
+          <span class="num">3744<small>×</small>8841</span>
+          <span class="label">px の外注立ち絵で実機QA<br><small>毎回、コア機能の探索的リグレッションも実施</small></span>
         </div>
       </div>
     </section>
@@ -84,7 +84,7 @@
         <li><span class="who me">自分</span><b>Issue</b><small>背景・範囲・やらないこと</small></li>
         <li><span class="who ai">AI</span><b>実装</b><small>Issueごとの短期ブランチ</small></li>
         <li><span class="who ai">AI</span><b>自動チェック</b><small>Releaseビルド 警告0・全PASS</small></li>
-        <li><span class="who me">自分</span><b>実機QA</b><small>Windows実機・OBS・回帰</small></li>
+        <li><span class="who me">自分</span><b>実機QA</b><small>Windows実機・OBS・毎回の探索的回帰</small></li>
         <li><span class="who me">自分</span><b>マージ</b><small>デグレなしを確認してから</small></li>
       </ol>
 
@@ -113,13 +113,13 @@
         </article>
 
         <article class="case">
-          <p class="case-tag">手順書もテスト対象</p>
-          <h3>「書いてあること」と「動き」を揃える</h3>
-          <p>使う人が読む手順書も、実機で確かめて直します。</p>
+          <p class="case-tag">自分の誤解もUXの課題</p>
+          <h3>「代用」の表示が伝わらない</h3>
+          <p>前髪レイヤーの実機QA中、未登録の口に何が使われるかを自分が読み違えました。</p>
           <ul>
-            <li>OBSで背景方式を切り替えると取り込みの再指定が必要 → <strong>手順書に反映</strong></li>
-            <li>ホットキーが競合したときの表示を、2つ目の起動で実際に確認</li>
-            <li>READMEに実装と異なる記述 → Issueを立てて現在の動きに合わせた</li>
+            <li>「画像未設定（利用可能な画像で代用）」から、別の表情セットの口が使われると受け取った</li>
+            <li>実際は同じセットの閉じた口を使う仕様。表情が混ざらないので<strong>仕様は維持</strong>と判断</li>
+            <li>作った本人でも誤解する表示は、使う人も誤解する → <strong>表示を直すIssue</strong>を起票</li>
           </ul>
         </article>
       </div>
