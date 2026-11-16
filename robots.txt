@@ -1,0 +1,6 @@
+# このサイトは検索結果に出さない方針です。
+# 各HTMLページの <meta name="robots" content="noindex, nofollow"> を
+# クローラーに読ませるため、ここではクロールをブロックしません。
+# （Disallow にすると noindex が読まれず、URLだけが検索結果に残ることがあります）
+User-agent: *
+Disallow:
